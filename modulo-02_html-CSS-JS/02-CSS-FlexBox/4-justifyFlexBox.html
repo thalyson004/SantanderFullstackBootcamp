@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Flow</title>
+
+    <style>
+    
+        .flex-container{
+            display: flex;
+            min-width: 300px;
+            max-width: 500px;
+            min-height: 50px;
+            max-height: 200px;
+            border: 5px solid black;
+            align-content: center;
+        }
+        
+        .flex-item{
+            color: black;
+            background-color: blue;
+            line-height: 50px;
+            height: 50px;
+            min-width: 55px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+
+        .center{
+            justify-content: center;
+        }
+
+        .space-between{
+            justify-content: space-between;
+        }
+
+        .space-around{
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Default (flex-start)</h2>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <h2>Flex-end</h2>
+    <div class="flex-container flex-end">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    
+    <h2>center</h2>
+    <div class="flex-container center">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    
+    <h2>space-between</h2>
+    <div class="flex-container space-between">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    
+    <h2>space-around</h2>
+    <div class="flex-container space-around">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    
+</body>
+</html>
