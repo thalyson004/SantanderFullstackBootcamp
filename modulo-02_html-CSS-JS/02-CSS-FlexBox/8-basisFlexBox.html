@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+
+    <style>
+    
+        .flex-container{
+            display: flex;
+            max-width: 400px;
+            height: 50px;
+            border: 5px solid black;
+        }
+        
+        .flex-item{
+            color: black;
+            background-color: blue;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex-grow-1{
+            flex-grow: 1;
+        }
+        
+        .flex-grow-2{
+            flex-grow: 2;
+        }
+
+        .flex-grow-3{
+            flex-grow: 3;
+        }
+
+        .flex-grow-4{
+            flex-grow: 4;
+        }
+
+        .basis-0{
+            flex-basis: 0;
+        }
+
+        .basis-70{
+            flex-basis: 70px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Resumo</h1>
+    <p>Flex-basis é o tamanho base do conteúdo do item.</p>
+
+    <h1>Exemplos</h1>
+
+    <h2>Default (auto)</h2>
+    <div class="flex-container">
+        <div class="flex-item flex-grow-1">A</div>
+        <div class="flex-item flex-grow-1">BBBB</div>
+        <div class="flex-item flex-grow-1">CCCCCCC</div>
+    </div>
+
+    <h2>Grow-0 + Basis-0</h2>
+    <div class="flex-container">
+        <div class="flex-item flex-grow-1 basis-0">A</div>
+        <div class="flex-item flex-grow-1 basis-0">BBBB</div>
+        <div class="flex-item flex-grow-1 basis-0">CCCCCCC</div>
+    </div>
+
+    <h2>Grow-0 + Basis-70</h2>
+    <div class="flex-container">
+        <div class="flex-item flex-grow-0 basis-70">A</div>
+        <div class="flex-item flex-grow-0 basis-70">BBBB</div>
+        <div class="flex-item flex-grow-0 basis-70">CCCCCCC</div>
+    </div>
+
+    <h2>Grow-1 + Basis-70</h2>
+    <div class="flex-container">
+        <div class="flex-item flex-grow-1 basis-70">A</div>
+        <div class="flex-item flex-grow-1 basis-70">BBBB</div>
+        <div class="flex-item flex-grow-1 basis-70">CCCCCCC</div>
+    </div>
+    
+</body>
+</html>
