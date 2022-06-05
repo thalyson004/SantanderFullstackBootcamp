@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items (main axis)</title>
+
+    <style>
+    
+        .flex-container{
+            display: flex;
+            min-width: 300px;
+            max-width: 500px;
+            border: 5px solid black;
+            align-content: center;
+        }
+        
+        .flex-item{
+            color: black;
+            background-color: blue;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+        
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Default (stretch)</h2>
+    <div class="flex-container">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    <h2>Center</h2>
+    <div class="flex-container center">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    <h2>Flex-Start</h2>
+    <div class="flex-container flex-start">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    <h2>Flex-End</h2>
+    <div class="flex-container flex-end">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    <h2>Baseline</h2>
+    <div class="flex-container baseline">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    
+    <h1>Column</h1>
+
+    <h2>Default (stretch) </h2>
+    <div class="flex-container column">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    <h2>Center</h2>
+    <div class="flex-container center column">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    <h2>Flex-Start</h2>
+    <div class="flex-container flex-start column">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    <h2>Flex-End</h2>
+    <div class="flex-container flex-end column">
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+        <div class="flex-item">Texto</div>
+        <div class="flex-item">Texto de duas linhas</div>
+        <div class="flex-item">Texto bem maior para representar mais linhas.</div>
+    </div>
+
+    
+</body>
+</html>
