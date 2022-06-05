@@ -10,7 +10,7 @@ Repositório para organização de aprendizado do bootcamp [Santander FullStack 
 -
 
 
-## Novos conhecimentos adiquiridos
+## Novos conhecimentos adquiridos
 
 - Introdução à programação
 - Introdução ao GIT
