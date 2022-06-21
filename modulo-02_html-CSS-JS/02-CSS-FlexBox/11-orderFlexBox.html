@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <style>
+    
+        .flex-container{
+            display: flex;
+            max-width: 250px;
+            min-width: 250px;
+            height: 50px;
+            border: 5px solid black;
+        }
+        
+        .flex-item{
+            color: black;
+            background-color: blue;
+            text-align: center;
+            margin: 5px;
+            flex-grow: 1;
+        }
+
+        .order--1{
+            order: -1;
+        }
+
+        .order-1{
+            order: 1;
+        }
+        
+        .order-2{
+            order: 2;
+        }
+        
+        .order-3{
+            order: 3;
+        }
+        
+        .order-4{
+            order: 4;
+        }
+
+        .order-5{
+            order: 5;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Resumo</h1>
+    <p>Order é a propriedade que define uma ordem para os elementos de um flex container</p>
+    <p>Primeiro os sem ordem, depois os que ordem de forma crescente e de aparição na lista</p>
+
+    <h1>Exemplos</h1>
+
+    <h2>No order</h2>
+    <div class="flex-container">
+        <div class="flex-item ">A</div>
+        <div class="flex-item ">B</div>
+        <div class="flex-item ">C</div>
+        <div class="flex-item ">D</div>
+        <div class="flex-item ">E</div>
+        <div class="flex-item ">F</div>
+    </div>
+
+    <h2>No order</h2>
+    <div class="flex-container">
+        <div class="flex-item ">A0</div>
+        <div class="flex-item ">B0</div>
+        <div class="flex-item order-2">C2</div>
+        <div class="flex-item order-2">D2</div>
+        <div class="flex-item order-1">E1</div>
+        <div class="flex-item order-1">F1</div>
+    </div>
+
+
+    <h2>With negative</h2>
+    <div class="flex-container">
+        <div class="flex-item ">A0</div>
+        <div class="flex-item ">B0</div>
+        <div class="flex-item order-2">C2</div>
+        <div class="flex-item order-2">D2</div>
+        <div class="flex-item order--1">E-1</div>
+        <div class="flex-item order--1">F-1</div>
+    </div>
+
+</body>
+</html>
